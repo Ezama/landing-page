@@ -104,13 +104,11 @@ main {
     flex: auto;
 }
 
+/* info-section */
 .info-section {
     background: #F9FAF8;
     color: #1F2937;
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 80px;
+    padding: 30px 30px 80px 30px;
 }
 
 .info-header-text {
@@ -135,6 +133,24 @@ main {
     font-size: 16px;
     color: #1F2937;
 }
+
+/* quote-section */
+.quote-section {
+    background-color: #E5E7EB;
+    color: #1F2937;
+    font-size: 16px;
+    font-weight: lighter;
+    font-style: italic;
+    padding: 60px 30px 40px 30px;
+}
+
+figcaption {
+    font-weight: 550;
+    text-align: right;
+    padding-top: 10px;
+}
+
+
 
 
 
