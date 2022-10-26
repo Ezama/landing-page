@@ -8,25 +8,24 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #1F2937;
-    color: #E5E7EB;
-    margin: auto;
+    background-color: #F9FAF8;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 70%;
 }
 
 /* Header */
 header {
-    padding: 10px 40px 50px 30px;
-    margin-bottom: 30px;
+    background-color: #1F2937;
+    padding: 10px 130px 90px;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 90px;
 }
 
 /* applying flex-grow: 1; - the header logo takes up as much available space as the list */
@@ -50,11 +49,10 @@ nav>ul>li>a {
     color: #E5E7EB;
 }
 
-/* applies to hero-section, info-section, and quote-section */
-.container {
+.hero-section {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
 }
 
 /* take up equal portions of available space */
@@ -62,15 +60,13 @@ nav>ul>li>a {
     flex: 1;
 }
 
+.hero-text {
+    color: #E5E7EB;
+}
+
 .hero-main-text {
     font-size: 40px;
     color: #F9FAF8;
-}
-
-/* applies to all elements with the subtext class*/
-.subtext {
-    font-size: 16px;
-    color: #E5E7EB;
 }
 
 /* applies to all buttons */
@@ -112,24 +108,30 @@ main {
 .info-section {
     background: #F9FAF8;
     color: #1F2937;
-    padding: 30px 30px 80px 30px;
+    text-align: center;
+    padding: 40px 150px 80px;
 }
 
 .info-header-text {
     font-size: 28px;
-    text-align: center;
     padding-bottom: 20px;
 }
 
+.info-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 .info-item {
-    flex: 1;
+    flex-basis: 150px;
 }
 
 .info-item>img {
-    font-size: 10px;
+    width: auto;
+    height: auto;
     border: 2px solid #3882F6; 
     border-radius: 0.5em;
-    padding: 30px;
     margin-bottom: 10px;
 }
 
@@ -145,7 +147,10 @@ main {
     font-size: 16px;
     font-weight: lighter;
     font-style: italic;
-    padding: 60px 30px 40px 30px;
+}
+
+figure {
+    padding: 50px 150px;
 }
 
 figcaption {
@@ -155,21 +160,19 @@ figcaption {
 }
 
 /* signup-section*/
-.signup-section {
-    background-color: #F9FAF8;
-    padding: 50px 0;
-}
-
-.signup-section>.container {
-    justify-content: space-around;
-}
 
 .big-button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
     background-color: #3882F6;
     color: #F9FAF8;
     border: none;
     border-radius: 0.3em;
-    padding: 50px;
+    padding: 50px 20px;
+    margin: 50px auto;
+    width: 60%;
 }
 
 .big-button>button{
@@ -189,9 +192,12 @@ figcaption {
 
 /* footer */
 footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
     font-size: 10px;
     font-weight: lighter;
-    padding: 10px 0;
+    padding: 10px;
 }
 
 
