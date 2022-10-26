@@ -120,16 +120,17 @@ main {
 .info-items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .info-item {
-    flex-basis: 150px;
+    max-width: 120px;
 }
 
 .info-item>img {
-    width: auto;
-    height: auto;
+    width: 120px;
+    height: 120px;
     border: 2px solid #3882F6; 
     border-radius: 0.5em;
     margin-bottom: 10px;
